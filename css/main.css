@@ -181,4 +181,35 @@ a {
     z-index: -1;
 }
 
+#overlay-about {
+    display: none;
+    position: absolute;
+    z-index: 1;
+    background-color: #c7c7c7;
+    width: 80%;
+    height: 80%;
+    border: solid rgb(77, 77, 139) 2px;
+    border-radius: 4em;
+    left: 10%;
+    top: 10%;
+}
 
+#overlay-about>h1 {
+    position: relative;
+    top: 5%;
+    left: 5%;
+    font-size: xx-large;
+}
+
+#overlay-about>#exit{
+    position: absolute;
+    top: 5%;
+    left: 90%;
+    /* background-color: #00abee; */
+    font-size: xx-large;
+    cursor: pointer;
+}
+
+#overlay-about>#exit:hover{
+    color: #0072b1;
+}

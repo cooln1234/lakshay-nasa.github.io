@@ -25,14 +25,21 @@
         <nav>
             <ul class="navbar">
                 <li><a href="/">Home</a></li>
-                <li><a href="">About</a></li>
+                <li><a href="" onclick="openAbout();return false;">About</a></li>
                 <li><a href="https://www.linkedin.com/in/lakshaynasa/">Experience</a></li>
-                <li><a href="https://github.com/lakshay-nasa">Projects</a></li>
+                <li><a href="https://github.com/lakshay-nasa" nclick="openProjects();return false;">Projects</a></li>
                 <li><a href="">Skills</a></li>
                 <li><a href="mailto:lakshay1717@gmail.com">Contact</a></li>
             </ul>
         </nav>
         <div class="bar"></div>
+        <div id="overlay-about">
+            <h1>
+                ABOUT ME
+            </h1>
+
+            <div id="exit" onclick="exit()">X</div>
+        </div>
         <div class="container">
             <div class="sub-container">
                 <div class="dp"></div>
@@ -40,12 +47,13 @@
                     <div class="sub-intro">
                         <h1>
                             Hi! I am Lakshay.
-                            <div class="work-status"> # <span class="work-status-anim"></span></div>
+                            <div class="work-status"> <span class="work-status-anim"></span></div>
                         </h1>
                     </div>
 
                     <div class="social">
-                        <a href="https://drive.google.com/file/d/1t8paoH7AbqigrPTc1gKQ3d7EhSl4hGem/view?usp=sharing" id="resume" target="_blank">Resume</a>
+                        <a href="https://drive.google.com/file/d/1t8paoH7AbqigrPTc1gKQ3d7EhSl4hGem/view?usp=sharing"
+                            id="resume" target="_blank">Resume</a>
 
                         <div class="sub-social">
                             <a href="https://twitter.com/lakshay1717" target="_blank">
