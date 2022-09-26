@@ -1,0 +1,10 @@
+@media screen and (max-width: 600px){
+    *{
+        visibility: hidden;
+    }
+
+    #alert{
+        display: block;
+        visibility: visible;
+    }
+}

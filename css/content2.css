@@ -1,7 +1,7 @@
 #Projects > h1, #other-content > h1, #meetMe > h1{
     color: #f68520;
     font-size: xx-large;
-    margin-top: 2em;
+    margin: 2em;
     background-color: white;
     height: auto;
     font-family: 'League Spartan', sans-serif;
@@ -9,33 +9,34 @@
     height: auto;
 }
 
-
-
 .content-boxes {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(18em, 2fr));
     gap: 2em;
-    grid-template-rows: 50% 50%;
-    margin: 2em;
-    padding: 2em;
+    row-gap: 2em;
+    margin: 1em;
+    padding: 1em;
     align-items: center;
     justify-items: center;
 }
 
 .content-boxes > div{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: 40% 20% 30% 10%;
+    padding-left: 1em;
+    padding-right: 1em;
+    padding-bottom: 1em;
     border-radius: 1.5em;
-    margin: 0.1em;
-    /* padding: 5em; */
+    margin: 1em;
     text-align: center;
     border: 2px solid rgba(0, 0, 0, 0.548);
     height: 18em;
     width: 18em;
     color: black;
-    background-color: #051b2e49;
+    background-color: #003768;
+    align-items: center;
+    box-shadow: 1px 1px 3px 1px whitesmoke inset;
 }
 
 .content-boxes :hover:not(.content-boxes > div > h3, p, i){
@@ -48,35 +49,39 @@
 .content-boxes > div > h3 > a{
     list-style: none;
     text-decoration: none;
-    color: black;
+    color: #20f68b;
+    font-size: x-large;
+
+    text-align: start;
+}
+
+.content-boxes > div > h3{
+    text-align: start;
+    font-size: x-large;
+    color: #20f68b;
 }
 
 .content-boxes > div > i{
-    font-size: xx-large;
-    color: white;
-    padding: 15%;
+    font-size: 400%;
+    color: rgba(245, 245, 245, 0.377);
+    padding: 10%;
 }
 
 .content-boxes > div >p {
-    margin: 5%;
+    text-align: start;
+    font-size: large;
+    color: rgba(245, 245, 245, 0.377);
 }
 
 .tech-used{
-    /* position: relative; */
-    color: #f68520;
-    font-size: small;
-    /* padding-bottom: 2%; */
+    position: relative;
+    color: #20f68b !important;
+    font-size: small !important;
+    top: 20%;
     text-align: center;
     width: 80%;
 }
 
-#Projects{
-    height: auto;
-}
-
-#other-content{
-    height: auto;
-}
 
 #meetMe{
     display: flex;

@@ -3,6 +3,8 @@
     padding: 0;
 }
 
+
+
 body{
     /* background-color: rgb(10, 25, 47); */
     background-color: white;
@@ -10,6 +12,9 @@ body{
 
 }
 
+#alert{
+    display: none;
+}
 
 .main-header{
     padding: 1em;
@@ -43,8 +48,8 @@ body{
 .sub-container {
     display: grid;
     grid-template-columns: 50% 50%;
-    grid-template-rows: 110%;
-    height: 70vh;
+    grid-template-rows: 90%;
+    height: 90vh;
     width: 100%;
     align-items: center;
     justify-items: center;
