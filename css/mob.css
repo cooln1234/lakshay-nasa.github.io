@@ -5,12 +5,11 @@
 
 @media screen and (max-width: 600px){
     *{
-        position: absolute;
         visibility: hidden;
     }
 
     #alert{
         display: block;
-        visibility: visible;
+        visibility: visible !important;
     }
 }
