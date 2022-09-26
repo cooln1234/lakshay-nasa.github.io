@@ -1,54 +1,51 @@
 * {
     margin: 0;
     padding: 0;
-    overflow: hidden;
 }
 
-header {
-    background-color: black;
+body{
+    /* background-color: rgb(10, 25, 47); */
+    background-color: white;
+    /* background-color: rgb(136, 146, 176); */
+
 }
 
-.navbar {
+
+.main-header{
+    padding: 1em;
     display: flex;
-    justify-content: flex-end;
-    width: 90vw;
-    height: 6vh;
-    gap: 1%;
-    align-items: center;
+    /* color: rgb(100, 255, 218); */
+    color: rgb(255, 174, 0);
+    /* text-shadow: 0.1px .1px rgb(146, 146, 146); */
 }
 
-.navbar>li {
-    list-style: none;
-    display: inline-block;
-    padding: 0 20px;
+#name-logo{
+    font-family: 'Qwitcher Grypen', cursive;
     font-size: x-large;
-    text-align: center;
+    flex: 2;
 }
 
 
-.navbar>li>a {
-    text-decoration: none;
-    color: #FFB41A;
-}
 
-.bar {
-    height: 0.1em;
-    background-color: #ffffffd0;
-    filter: blur(3px);
+.mylogo {
+    font-family: "Agustina Regular";
+    font-weight: bold;
+    padding: 0 100px;
+    /* color: #55198b; */
 }
 
 .container {
-    background-color: #FFB41A;
+    /* background-color: #FFB41A; */
     position: relative;
-    z-index: 0;
+    /* z-index: 0; */
 }
 
 .sub-container {
     display: grid;
     grid-template-columns: 50% 50%;
-    grid-template-rows: 85%;
-    height: 94vh;
-    width: 100vw;
+    grid-template-rows: 110%;
+    height: 70vh;
+    width: 100%;
     align-items: center;
     justify-items: center;
     text-shadow: 0px 0px 4px rgba(0, 0, 0, 0.418);
@@ -57,6 +54,7 @@ header {
 .dp {
     width: 20em;
     height: 20em;
+    /* filter: grayscale(100); */
     background-size: 20em;
     background-repeat: no-repeat;
     background-image: url("https://avatars.githubusercontent.com/u/76848292?v=4");
@@ -76,7 +74,7 @@ header {
 }
 
 .sub-intro {
-    font-family: 'Edu VIC WA NT Beginner', cursive;
+    font-family: 'Open Sans', sans-serif;
     font-size: x-large;
     width: 20em;
     position: relative;
@@ -94,122 +92,10 @@ header {
 }
 
 .work-status-anim {
-    color: white;
-}
-
-.social {
-    text-align: center;
-    position: relative;
-    top: 12em;
-    right: 20px;
-}
-
-#resume {
-    background: #212121;
-    padding: 10px 18px;
-    text-decoration: none;
-    font-weight: bold;
-    color: #fff;
-    display: inline-block;
-    margin: 30px 0;
-    border-radius: 5px;
-    align-self: center;
-}
-
-#resume:hover {
-    background-color: #fff;
-    color: #212121;
+    color: blueviolet;
 }
 
 
-.sub-social {
-    display: flex;
-    flex-direction: row;
-    gap: 2em;
-}
-
-.icon-btn {
-    margin-left: auto;
-    width: 50px;
-    height: 50px;
-    border: 0;
-    cursor: pointer;
-    font-size: 30px;
-    line-height: 0;
-    border-radius: 45px;
-    display: inline-block;
-    margin: 4px;
-    text-shadow: 0px 0px 4px rgba(0, 0, 0, 0.425);
-}
-
-a {
-    border-radius: 50%;
-}
-
-.twitter {
-    line-height: 2;
-    color: #00acee;
-}
-
-.twitter:hover {
-    background-color: #00acee;
-    color: #e9e9ed;
-}
-
-.linkedin {
-    color: #0072b1;
-}
-
-.linkedin:hover {
-    background-color: #0072b1;
-    color: #e9e9ed;
-}
-
-.github:hover {
-    background-color: #171515;
-    color: #e9e9ed;
-}
 
 
-.mydesign {
-    background-color: black;
-    width: 10px;
-    height: 10px;
-    position: absolute;
-    left: 0px;
-    bottom: 0px;
-    z-index: -1;
-}
 
-#overlay-about {
-    display: none;
-    position: absolute;
-    z-index: 1;
-    background-color: #c7c7c7;
-    width: 80%;
-    height: 80%;
-    border: solid rgb(77, 77, 139) 2px;
-    border-radius: 4em;
-    left: 10%;
-    top: 10%;
-}
-
-#overlay-about>h1 {
-    position: relative;
-    top: 5%;
-    left: 5%;
-    font-size: xx-large;
-}
-
-#overlay-about>#exit{
-    position: absolute;
-    top: 5%;
-    left: 90%;
-    /* background-color: #00abee; */
-    font-size: xx-large;
-    cursor: pointer;
-}
-
-#overlay-about>#exit:hover{
-    color: #0072b1;
-}
