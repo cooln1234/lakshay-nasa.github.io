@@ -13,7 +13,7 @@ body{
 }
 
 #alert{
-    display: none;
+    visibility: hidden;
 }
 
 .main-header{
