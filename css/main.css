@@ -9,11 +9,7 @@ body{
     /* background-color: rgb(10, 25, 47); */
     background-color: white;
     /* background-color: rgb(136, 146, 176); */
-
-}
-
-#alert{
-    visibility: hidden;
+    overflow-x: hidden;
 }
 
 .main-header{
